@@ -15,7 +15,7 @@ public class SplashActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        RelativeLayout splash_root = findViewById(R.id.splash_root);
+        RelativeLayout splash_root = findViewById(R.id.splash_root); //
 
         //渐变动画，缩放动画，旋转动画
         AlphaAnimation alphaAnimation = new AlphaAnimation(0,1); //Animation 动画 alphaAnimation 应该是阿尔法通道的动画 , 0-1 从看不见到看得见
@@ -40,4 +40,6 @@ public class SplashActivity extends Activity {
         splash_root.startAnimation(set);
 
     }
+
+
 }
